@@ -19,7 +19,7 @@
 /* Main code starts here */
 
 nav {
-  background-image: url(images/backgroundimg.jpg);
+  background-image: url(images/mainbackground.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,7 +44,7 @@ ul {
   font-family: "Rubik";
 }
 
-h1 {
+#main-heading {
   font-family: "Courgette";
   color: white;
   display: flex;
@@ -63,8 +63,27 @@ h1 {
   color: white;
 }
 
+main {
+  background-color: #fba521;
+  color: #551111;
+}
+
 @media (max-width: 360px) {
-  h1 {
+  #main-heading {
     font-size: 3em;
+  }
+
+  h1 {
+    text-align: center;
+    padding: 5% 0;
+  }
+
+  ul {
+    display: block;
+    text-align: center;
+  }
+
+  li {
+    padding: 7.5px;
   }
 }
