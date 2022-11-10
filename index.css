@@ -1,0 +1,12 @@
+/* FONTS
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800); */
+
+.img_container {
+  height: 400px;
+  /* display: flex;
+  justify-content: center; */
+}
+.beer_img {
+  height: 100%;
+}
