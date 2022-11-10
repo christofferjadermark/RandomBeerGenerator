@@ -19,11 +19,11 @@ function generateHtml(beerArray) {
   if (beerArray[0].image_url) {
     beerContainer.innerHTML = `
     <div class ="align-items-center row" >
-    <h3 >${beerArray[0].name}</h3>
+    <h3>${beerArray[0].name}</h3>
     <p>${beerArray[0].tagline}</p>
-    <div class="img_container">
+    <a href="beer.html?id=${beerArray[0].id}" class="img_container">
     <img class="beer_img" src="${beerArray[0].image_url}" alt="">
-    </div>
+    </a>
     <p>${beerArray[0].description}</p>
     <ul class="list-group">
     <li class="list-group-item">${beerArray[0].ph}</li>
@@ -35,7 +35,10 @@ function generateHtml(beerArray) {
     beerContainer.innerHTML = `
     <h3>${beerArray[0].name}</h3>
     <p>${beerArray[0].tagline}</p>
-    <img src="https://static.specsonline.com/wp-content/themes/Specs%20Theme/images/default_beer.png" alt="" />
+    <a href="beer.html?id=${beerArray[0].id}" class="img_container">
+    <img class="beer_img" src="https://static.specsonline.com/wp-content/themes/Specs%20Theme/images/default_beer.png" alt="" />
+
+    </a>
     <p>${beerArray[0].description}</p>
     <ul class="list-group">
     <li class="list-group-item">${beerArray[0].ph}</li>
