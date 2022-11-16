@@ -27,6 +27,16 @@
   padding-left: 20px;
 }
 
+#valid-msg {
+  padding-left: 20px;
+  color: green;
+}
+
+#error-msg-all {
+  padding-left: 20px;
+  color: red;
+}
+
 .invalid-name,
 .invalid-email,
 .invalid-text {

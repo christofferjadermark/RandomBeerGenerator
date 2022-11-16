@@ -7,7 +7,11 @@ const email = document.getElementById("email");
 const text = document.getElementById("message");
 const form = document.getElementById("form-area");
 const submitBtn = document.querySelector(".submit_btn");
-const msgSent = document.getElementsByClassName("msg-sent");
+const msgSent = document.getElementById("valid-msg");
+const msgError = document.getElementById("error-msg-all");
+
+msgSent.style.display = "none";
+msgError.style.display = "none";
 
 function validateEmail(email) {
   const regEx = /\S+@\S+\.\S+/;
@@ -42,11 +46,12 @@ function nameValidation() {
     errorText.style.display === "none"
   ) {
     console.log("working");
-    form.style.display = "none";
-    msgSent.display = "block";
-    msgSent.textContent = "Your message have been sent!";
+    msgSent.style.display = "block";
+    msgError.style.display = "none";
   } else {
     console.log("no");
+    msgSent.style.display = "none";
+    msgError.style.display = "block";
   }
 }
 
