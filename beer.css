@@ -20,19 +20,3 @@
 .beer_img {
   height: 100%;
 }
-
-.food-pairing {
-  margin: 10px 0px;
-  letter-spacing: 1px;
-  text-decoration: underline;
-}
-
-.brewers-tips {
-  margin: 30px;
-  font-style: italic;
-  font-weight: 600;
-}
-
-.ingredients-li {
-  font-size: 1rem;
-}

@@ -27,8 +27,8 @@ function generateHtml(x) {
     <div class="img_container">
     <img class="beer_img" src="${x[0].image_url}" alt="">
     </div>
-    <p class="food-pairing">${x[0].food_pairing}</p>
-    <p class="brewers-tips">${x[0].brewers_tips}</p>
+    <p>${x[0].food_pairing}</p>
+    <p>${x[0].brewers_tips}</p>
     `;
   } else {
     beerInfo.innerHTML = `
@@ -37,8 +37,8 @@ function generateHtml(x) {
     <div class="img_container">
     <img class="beer_img" src="https://static.specsonline.com/wp-content/themes/Specs%20Theme/images/default_beer.png" alt="">
     </div>
-    <p class="food-pairing">${x[0].food_pairing}</p>
-    <p class="brewers-tips">${x[0].brewers_tips}</p>
+    <p class="ölen">${x[0].food_pairing}</p>
+    <p>${x[0].brewers_tips}</p>
     `;
   }
 }
@@ -49,9 +49,7 @@ function createsIngredientsList(x) {
 
   for (let i = 0; i < ingredientsArray.length; i++) {
     ingredientsHtml.innerHTML += `
-    <ul class="list-group ingredients-group">
-    <li class="list-group-item ingredients-li">${ingredientsArray[i].name}, ${ingredientsArray[i].amount.value} ${ingredientsArray[i].amount.unit}</li>
-    </ul>
+    <li>${ingredientsArray[i].name}, ${ingredientsArray[i].amount.value} ${ingredientsArray[i].amount.unit}</li>
     `;
   }
 }
