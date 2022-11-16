@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Endless Beer</title>
-    <link rel="stylesheet" href="index.css" />
+    <title>Contact</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <!-- NAV -->
@@ -32,15 +32,13 @@
         <div class="navbar-collapse collapse" id="navbarCollapse" style="">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="beer.html">Beers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link active" href="contact.html">Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -55,37 +53,48 @@
               class="btn btn-outline-success"
               type="submit"
             >
-              Search
+              Send
             </button>
           </form>
         </div>
       </div>
     </nav>
-    <!-- HEADER -->
+    <!-- CONTACT FORM -->
 
-    <!-- MAIN -->
-    <main class="container text-center main-container">
-      <div>
-        <h1 class="mt-4 main-title">Endless Beer</h1>
-        <div class="m-4">
-          <h2 class="text-center question-text">
-            What beer are you gonna drink tonight?
-          </h2>
-          <button class="btn generate_button m-2 btn-lg btn-outline-success">
-            Generate beer
-          </button>
-        </div>
-        <div class="beer-container"></div>
+    <div class="container">
+      <div class="form-container" id="form-area">
+        <p class="msg-sent"></p>
+        <h3 class="form-title">What beer is missing?</h3>
+        <input
+          class="input-area"
+          type="text"
+          id="name"
+          placeholder="Your Name"
+        />
+        <p class="error-msg invalid-name">
+          Your name has to be more than 3 characters.
+        </p>
+        <input class="input-area" type="email" id="email" placeholder="Email" />
+        <p class="error-msg invalid-email">Please enter a valid Email.</p>
+        <textarea
+          class="text-area"
+          id="message"
+          rows="4"
+          placeholder="Please enter a beer that is missing."
+        ></textarea>
+        <p class="error-msg invalid-text">
+          Message have to be more than 25 characters.
+        </p>
+        <button class="submit_btn btn btn-outline-success" type="submit">
+          Submit
+        </button>
       </div>
-    </main>
-    <!-- FOOTER -->
-    <script src="index.js"></script>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="contact.js"></script>
   </body>
 </html>
-
-<ul class="list-group"></ul>

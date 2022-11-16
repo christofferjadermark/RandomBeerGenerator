@@ -24,7 +24,7 @@ function generateHtml(beerArray) {
     <a href="beer.html?id=${beerArray[0].id}" class="img_container">
     <img class="beer_img" src="${beerArray[0].image_url}" alt="">
     </a>
-    <p>${beerArray[0].description}</p>
+    <p class="desc-text">${beerArray[0].description}</p>
     <ul class="list-group">
     <li class="list-group-item">${beerArray[0].ph}</li>
     <li class="list-group-item">${beerArray[0].volume.value} ${beerArray[0].volume.unit}</li>
@@ -39,7 +39,7 @@ function generateHtml(beerArray) {
     <img class="beer_img" src="https://static.specsonline.com/wp-content/themes/Specs%20Theme/images/default_beer.png" alt="" />
 
     </a>
-    <p>${beerArray[0].description}</p>
+    <p class="desc-text">${beerArray[0].description}</p>
     <ul class="list-group">
     <li class="list-group-item">${beerArray[0].ph}</li>
     <li class="list-group-item">${beerArray[0].volume.value} ${beerArray[0].volume.unit}</li>
