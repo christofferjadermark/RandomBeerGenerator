@@ -45,11 +45,11 @@ function nameValidation() {
     errorEmail.style.display === "none" &&
     errorText.style.display === "none"
   ) {
-    // console.log("working");
+    console.log("working");
     msgSent.style.display = "block";
     msgError.style.display = "none";
   } else {
-    // console.log("no");
+    console.log("no");
     msgSent.style.display = "none";
     msgError.style.display = "block";
   }
